@@ -28,3 +28,12 @@ values
 ('Docker','2016-02-01 22:02:15'),
 ('MySQL','2013-10-03 05:30:06');
 
+
+
+CREATE USER 'yishai'@'%' IDENTIFIED BY 'opsschoolsql';
+
+GRANT ALL PRIVILEGES ON *.* to yishai@'%' IDENTIFIED BY 'opsschoolsql' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+EXIT
